@@ -1,0 +1,22 @@
+$font-color: #606060;
+$white: #fff;
+$black: #999;
+$radius-base: 5px;
+$radius-base-big: 8px;
+$color-base: #08b5e3;
+$color-base-alpha: rgba(8,181,227, 0.5);
+$color-base-alpha03: rgba(8,181,227, 0.3);
+$color-base-light: #20b5e2;
+$color-base-dark: #1581a1;
+$transition-time: 0.35s;
+$gray: #bbb;
+$gray-light: #ededed;
+$gray-lightest: #f6f6f6;
+$gray-dark: #333;
+
+$sidebar-width: 260px;
+
+@media screen and (min-width: 768px) {
+  $radius-base: 10px;
+  $radius-base-big: 16px;
+}

@@ -1,0 +1,59 @@
+.tabs-header {
+  border-bottom: 1px solid darken($gray, 5%);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.tabs-header.has-right-button {
+  padding-right: 180px;
+}
+
+.tabs-header.has-right-button .button-right {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+
+.tabs-header:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.tab-btn {
+  background-color: $gray-light;
+  border: 1px solid transparent;
+  border-bottom: none;
+  color: $font-color;
+  display: block;
+  float: left;
+  line-height: 1em;
+  margin-right: 6px;
+  margin-bottom: -1px;
+  padding-bottom: 7px;
+  padding-top: 8px;
+  @include border-radius(3px 3px 0 0);
+  &:hover {
+    background-color: lighten($gray-light, 2%);
+  }
+  &:active {
+    background-color: darken($gray-light, 2%);
+  }
+  &.is-actived {
+    background-color: #fff;
+    border: 1px solid darken($gray, 5%);
+    border-bottom-color: transparent;
+    cursor: default;
+  }
+}
+
+.tab-body-item {
+  padding: 40px 20px;
+  display: none;
+}
+
+.tab-body-item.is-actived {
+  display: block;
+}

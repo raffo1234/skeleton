@@ -1,0 +1,18 @@
+#achivos mac
+.DS_Store
+
+# Dependency directories
+node_modules
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results

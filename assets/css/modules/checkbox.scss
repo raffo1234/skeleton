@@ -1,0 +1,71 @@
+/* CHECKBOX */
+
+.wrapper-checkbox {
+  min-height: 16px;
+  position: relative;
+  padding-left: 34px;
+}
+
+.wrapper-checkbox.checkbox-editable {
+  padding-right: 40px;
+  position: relative;
+}
+
+.wrapper-checkbox .checkbox-square {
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 16px;
+}
+
+.checkbox-square {
+  color: darken($gray, 50%);
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+.checkbox-square label {
+  background-color: #fff;
+  border: 1px solid $color-base;
+  cursor: pointer;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+  @include border-radius(2px);
+}
+
+.checkbox-square.no-border label {
+  border-color: transparent;
+}
+
+.checkbox-square label:after {
+  content: '\e934';
+  background: transparent;
+  border-right: none;
+  border-top: none;
+  font-family: 'icomoon';
+  font-size: 17px;
+  font-weight: 700;
+  left: -1px;
+  opacity: 0;
+  position: absolute;
+  top: -2px;
+  @include transition(opacity $transition-time);
+}
+
+.checkbox-square label:hover::after {
+  opacity: 0.2;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}

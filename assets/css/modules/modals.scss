@@ -1,0 +1,127 @@
+.modal {
+  background-color: $color-base-alpha;
+  display: none;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  padding: 50px 15px 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.modal h2 {
+  color: $color-base;
+  font-size: 1.65em;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.modal h3 {
+  color: $color-base;
+  font-size: 1.35em;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.modal-header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+
+.modal-header label {
+  font-size: 1em;
+}
+
+.modal-header label.small {
+  font-size: 0.86em;
+}
+
+.modal-header.side-elements {
+}
+
+.modal-header.side-elements .header-inner{
+  margin: 0 auto;
+}
+
+.modal-body {
+  background-color: $gray-light;
+  max-height: 482px;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-body.padding {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.modal-footer {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.modal-footer .display-table-cell {
+  width: 50%;
+}
+
+.modal-footer .display-table-cell.align-left {
+  padding-left: 5px;
+}
+
+.modal-footer .display-table-cell.align-right {
+  padding-right: 5px;
+}
+
+.modal.gray {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.modal.is-actived {
+  display: block;
+}
+
+.modal .inner {
+  background-color: #fff;
+  max-width: 710px;
+  position: relative;
+  width: 100%;
+  @include border-radius($radius-base-big);
+}
+
+.modal .inner .btn-close {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal .inner .btn-close {
+    right: -40px;
+    top: 3px;
+  }
+}
+
+.modal .inner > .display-table,
+.modal .inner > .display-table > .display-table-cell {
+  display: block;
+}
+
+.modal .inner-border-radius {
+  @include border-radius($radius-base-big);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+
+}

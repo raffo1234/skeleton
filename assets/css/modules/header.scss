@@ -1,0 +1,15 @@
+#header {
+  background-color: $gray-light;
+  height: 78px;
+  padding: 5px 12px 5px 65px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  
+}

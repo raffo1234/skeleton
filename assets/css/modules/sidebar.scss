@@ -1,0 +1,11 @@
+#sidebar {
+  background-color: $gray-dark;
+  bottom: 50px;
+  left: 0;
+  padding-top: 78px;
+  padding-bottom: 161px;
+  position: fixed;
+  top: 0;
+  width: $sidebar-width;
+  z-index: 10;
+}
