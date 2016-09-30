@@ -1,9 +1,8 @@
 Frontend skeleton
 =================
 
-```
-assets
-│   
+```sh
+cd assets
 ```
 
 Install
