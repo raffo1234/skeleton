@@ -1,6 +1,10 @@
 Frontend skeleton
 =================
 
+```
+assets
+│   
+```
 
 Install
 -------
